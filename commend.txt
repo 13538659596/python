@@ -1,0 +1,13 @@
+编译.py 源文件成.pyc 文件
+	import py_compile 
+	py_compile.compile('path') //path是包括.py文件名的路径
+	
+编译.py 源文件成.pyo文件
+	python -O -m py_compile file.py
+	1.其中的 -m 相当于脚本中的import，这里的-m py_compile 相当于上面的 import py_compile 
+	2.-O 如果改成 -OO 则是删除相应的 pyo文件，具体帮助可以在控制台输入 python -h 查看
+	
+键盘输入
+	raw_input()
+	
+global 强制声明为全局变量
